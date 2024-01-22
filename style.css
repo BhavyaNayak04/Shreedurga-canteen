@@ -33,7 +33,7 @@ body {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 40px; /* Adjust the top position as needed */
+  top: 40px; 
   right: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -107,7 +107,7 @@ nav a {
   align-items: center;
 }
 
-/* Styles for the card header */
+
 .card-header {
   background-color: #bb967a;
   padding: 10px;
@@ -116,7 +116,7 @@ nav a {
   color: rgb(0, 0, 0);
 }
 
-/* Styles for the card content */
+
 .card-content {
   padding: 20px;
 }
@@ -143,7 +143,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   body {
-    background-size: contain; /* Adjust background size for smaller screens */
+    background-size: contain; 
     padding-top: 64px;
   }
 
