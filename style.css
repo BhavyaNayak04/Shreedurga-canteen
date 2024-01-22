@@ -13,8 +13,14 @@ body {
   background-image: url("uvi.jpg");
   background-size: contain;
   background-position: center;
-  height: 100vh; 
+  height: 100vh; /* Make sure the body takes up the full height of the viewport */
 }
+
+
+
+
+
+
 
 .navbar {
   display: flex;
