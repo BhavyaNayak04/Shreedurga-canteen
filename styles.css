@@ -1,0 +1,242 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Asap+Condensed:wght@200&family=Cormorant:ital@1&family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&family=Merriweather+Sans:wght@500&family=Nanum+Myeongjo&display=swap");
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  background-image: url("im.jpg");
+  background-size: cover;
+  font-family: "lato", sans-serif;
+  line-height: 1.6;
+  height: 100%;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Menu icon styles */
+.menu-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.show-dropdown {
+  display: flex;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Content section styles */
+#sec1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
+  padding-left: 28px;
+  padding-top: 30px;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  width: 70%;
+}
+
+/* Navigation styles */
+nav {
+  background-image: rgb(255, 255, 255);
+  opacity: 100%;
+  text-align: right;
+  top: 0%;
+  height: 80px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 4px;
+  width: 100%;
+  position: fixed;
+}
+
+nav a:hover {
+  color: rgb(0, 179, 255);
+}
+
+nav a {
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Glowing text styles */
+.glowing-text {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+  animation: glow 1s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgb(43, 43, 74), 0 0 20px rgb(255, 139, 139),
+      0 0 30px rgb(121, 221, 255);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(128, 255, 0), 0 0 30px #00f,
+      0 0 40px rgb(255, 0, 183);
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(203, 65, 249), 0 0 20px rgb(255, 159, 33),
+      0 0 30px rgb(255, 255, 0);
+  }
+}
+
+/* Image container styles */
+.image-container {
+  display: flex;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.image-item {
+  width: 200px;
+  height: 150px;
+  margin: 0 10px;
+  animation: moveLeftToRight 40s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-800%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(800%);
+  }
+}
+
+/* Content container styles */
+/* Content container styles */
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 8%;
+}
+
+.cont img {
+  justify-self: end;
+  margin-right: 10px;
+}
+
+/* Additional styles for small screens */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: contain;
+  }
+
+  .glowing-text {
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+    animation: glow 1s ease-in-out infinite;
+  }
+
+  #sec1 {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 28px;
+    padding-left: 28px;
+    text-align: justify;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .cont {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+  }
+
+  #im {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 16px;
+  }
+
+  .cont img {
+    justify-self: center;
+    margin-right: 20px;
+    height: 200px;
+    width: 50px;
+    padding-right: 2px;
+  }
+
+  .image-item {
+    width: 150px;
+    height: 100px;
+    margin: 0 10px;
+    animation: moveLeftToRight 40s linear infinite;
+  }
+
+  .image-container {
+    display: flex;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
+}
