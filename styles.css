@@ -29,16 +29,29 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
 }
 
-/* Menu icon styles */
+
 .menu-icon {
-  font-size: 24px;
-  color: white;
+  font-size: 0;
   cursor: pointer;
 }
+.menu-icon::before {
+  content: "Menu"; 
+  font-size: 22px; 
+  margin-right: 8px;
+}
+.menu-icon:hover::before {
+  color: #00bcd4; 
+}
 
-/* Dropdown styles */
+.menu-icon::before {
+  transition: color 0.3s ease-in-out;
+}
+
 .dropdown-content {
   display: none;
   flex-direction: column;
@@ -78,7 +91,7 @@ body {
   }
 }
 
-/* Content section styles */
+
 #sec1 {
   font-family: "Nanum Myeongjo", serif;
   font-size: 30px;
@@ -89,7 +102,7 @@ body {
   width: 70%;
 }
 
-/* Navigation styles */
+
 nav {
   background-image: rgb(255, 255, 255);
   opacity: 100%;
@@ -115,7 +128,7 @@ nav a {
   font-size: 20px;
 }
 
-/* Glowing text styles */
+
 .glowing-text {
   font-size: 30px;
   text-align: center;
@@ -139,7 +152,7 @@ nav a {
   }
 }
 
-/* Image container styles */
+
 .image-container {
   display: flex;
   overflow: hidden;
@@ -165,8 +178,7 @@ nav a {
   }
 }
 
-/* Content container styles */
-/* Content container styles */
+
 .cont {
   display: flex;
   align-items: center;
@@ -179,7 +191,7 @@ nav a {
   margin-right: 10px;
 }
 
-/* Additional styles for small screens */
+
 @media screen and (max-width: 600px) {
   body {
     background-size: contain;
