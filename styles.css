@@ -41,6 +41,7 @@ body {
   content: "MENU";
   font-size: 32px bold; 
   margin-right: 8px;
+  margin-top: -50px;
   font-weight: bold;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.5s ease-in-out; 
 }
@@ -194,26 +195,26 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Add these styles for the menu button */
+
 .menu-button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
-  font-weight: normal; /* Updated to normal weight */
+  font-weight: bolder; 
   color: white;
   background-color: #333;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s, font-weight 0.3s; /* Added font-weight transition */
-  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s, font-weight 0.3s, text-shadow 0.5s ease-in-out; /* Added text-shadow transition */
+  margin-top: -4px;
 }
 
 .menu-button:hover {
-  background-color: #555;
-  transform: scale(1.05);
-  font-weight: bold; /* Added bold on hover */
+  background-color: #00bcd4;
+  transform: scale(1.1);
+  text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f; /* Added glowing effect */
 }
 
 @media screen and (max-width: 600px) {
