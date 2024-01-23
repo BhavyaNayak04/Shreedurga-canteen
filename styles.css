@@ -209,7 +209,7 @@ button:hover {
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s, font-weight 0.3s, text-shadow 0.5s ease-in-out; 
   margin-top: -10px;
-  position: fixed; 
+  position: relative; 
   top: 0; 
   left: 0;
 }
