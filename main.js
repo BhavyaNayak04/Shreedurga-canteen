@@ -1,16 +1,14 @@
-var swiper = new Swiper(".home", {
-    spaceBetween: 30,
-    centeredSlides: true,
+const menuIcon = document.querySelector(".menu-icon");
 
-
-    
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-
-
-  
-
+menuIcon.addEventListener("click", () => {
+  dropdownContent.classList.toggle("show-dropdown");
+  if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    window.location.href = "menu.html";
+  }
+});
+document.addEventListener("click", (event) => {
+  const isClickInside = dropdownContent.contains(event.target) || menuIcon.contains(event.target);
+  if (!isClickInside) {
+    dropdownContent.classList.remove("show-dropdown");
+  }
+});
