@@ -207,8 +207,8 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s, font-weight 0.3s, text-shadow 0.5s ease-in-out; /* Added text-shadow transition */
-  margin-top: -4px;
+  transition: background-color 0.3s, transform 0.3s, font-weight 0.3s, text-shadow 0.5s ease-in-out; 
+  margin-top: -10px;
   position: fixed; 
   top: 0; 
   left: 0;
@@ -284,14 +284,14 @@ button:hover {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: normal; /* Updated to normal weight */
+    font-weight: normal; 
     color: white;
     background-color: #333;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s, font-weight 0.3s; /* Added font-weight transition */
+    transition: background-color 0.3s, transform 0.3s, font-weight 0.3s; 
     margin-top: 20px;
   }
   
