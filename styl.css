@@ -40,9 +40,10 @@ button {
 }
 
 .dropdown-content a {
-  color: white;
+  color: rgb(16, 1, 1);
   padding: 12px 16px;
   text-decoration: none;
+  block-size: ;
   display: block;
   transition: background-color 0.3s;
 }
