@@ -1,17 +1,16 @@
-/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Asap+Condensed:wght@200&family=Cormorant:ital@1&family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&family=Merriweather+Sans:wght@500&family=Nanum+Myeongjo&display=swap");
 
-/* Reset default styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body styles */
+
 body {
   background-image: url("im.jpg");
   background-size: cover;
@@ -23,7 +22,7 @@ body {
   padding-bottom: 20px;
 }
 
-/* Navbar styles */
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -31,7 +30,7 @@ body {
   padding: 10px;
   background-color: #333;
   color: white;
-   font-weight: bold;
+  font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
 }
 
@@ -41,7 +40,7 @@ body {
   cursor: pointer;
 }
 .menu-icon::before {
-  content: "Menu"; 
+  content: "GO TO MENU"; 
   font-size: 22px; 
   margin-right: 8px;
 }
@@ -55,8 +54,8 @@ body {
 
 .dropdown-content {
   display: none;
-  flex-direction: column;
-  position: absolute;
+  flex-direction: row;
+  position: left;
   top: 40px;
   right: 10px;
   min-width: 160px;
