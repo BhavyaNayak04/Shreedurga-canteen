@@ -75,7 +75,7 @@ padding: 2rem;
   align-items: center;
 height: 100%;
 width: 100%;
-  background-image: url("../food.jpg");
+  background-image: url("food.jpg");
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
