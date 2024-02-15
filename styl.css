@@ -6,115 +6,16 @@
   margin: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "lato", sans-serif;
-  background-image: url("uvi.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 100vh; 
-}
 
-button {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.dropdown-content a {
-  color: rgb(16, 1, 1);
-  padding: 12px 16px;
-  text-decoration: none;
-  block-size: ;
-  display: block;
-  transition: background-color 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: #555;
-}
-
-.show-dropdown {
-  display: flex;
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-nav {
-  background-image: rgb(255, 255, 255);
-  opacity: 100%;
-  text-align: right;
-  top: 0%;
-  height: 56px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 4px;
-  width: 100%;
-  position: fixed;
-}
-
-nav a:hover {
-  color: rgb(0, 179, 255);
-}
-
-nav a {
-  padding: 30px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.card-container {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 
 .card {
-  color: rgb(230, 106, 106);
+  color: rgb(0, 0, 0);
   background-color: rgb(12, 12, 12);
   opacity: 0.7;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 36px;
-  width: 600px;
+  padding: 10px  20px;
+  max-width: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -134,9 +35,6 @@ iframe {
   text-decoration: none;
 }
 
-.ca {
-  padding: 4px;
-}
 
 @media screen and (max-width: 600px) {
   body {
@@ -149,8 +47,6 @@ iframe {
     opacity: 0.7;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 28px;
-    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
@@ -161,3 +57,27 @@ iframe {
     width: 100%;
   }
 }
+
+.maincontainer{
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 1.2rem;
+padding: 2rem;
+}
+
+
+.mymain{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 100%;
+width: 100%;
+  background-image: url("../food.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
