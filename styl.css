@@ -76,7 +76,6 @@ padding: 2rem;
 height: 100%;
 width: 100%;
   background-image: url("food.jpg");
-  object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
